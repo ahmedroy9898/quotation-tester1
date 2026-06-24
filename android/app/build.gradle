@@ -36,8 +36,3 @@ android {
 flutter {
     source "../.."
 }
-
-dependencies {
-    debugImplementation "io.flutter:flutter_embedding_debug"
-    releaseImplementation "io.flutter:flutter_embedding_release"
-}
