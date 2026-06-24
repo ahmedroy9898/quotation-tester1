@@ -1,6 +1,5 @@
 plugins {
     id "com.android.application"
-    id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 }
 
@@ -22,8 +21,8 @@ android {
         applicationId "com.almubarak.almubarak_quotation"
         minSdk flutter.minSdkVersion
         targetSdk flutter.targetSdkVersion
-        versionCode flutter.versionCode?.toInteger() ?: 1
-        versionName flutter.versionName ?: "1.0"
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
     }
 
     buildTypes {
@@ -34,5 +33,5 @@ android {
 }
 
 flutter {
-    source "../.."
+    source "../.." 
 }
