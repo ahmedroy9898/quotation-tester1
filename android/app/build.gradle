@@ -21,8 +21,8 @@ android {
         applicationId "com.almubarak.almubarak_quotation"
         minSdk flutter.minSdkVersion
         targetSdk flutter.targetSdkVersion
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {
@@ -33,5 +33,5 @@ android {
 }
 
 flutter {
-    source "../.." 
+    source "../.."
 }
