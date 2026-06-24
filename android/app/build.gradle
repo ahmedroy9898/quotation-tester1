@@ -1,7 +1,14 @@
 plugins {
     id "com.android.application"
     id "org.jetbrains.kotlin.android"
-    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def flutterRoot = rootProject.projectDir.parentFile.absolutePath
+def flutterProperties = new Properties()
+flutterProperties.load(new FileInputStream(new File(flutterRoot, '.flutter')))
+
+flutter {
+    source = flutterRoot
 }
 
 android {
@@ -33,6 +40,6 @@ android {
     }
 }
 
-flutter {
-    source "../.."
+dependencies {
+    implementation "io.flutter:flutter_embedding_release"
 }
